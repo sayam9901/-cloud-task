@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survery page</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="survey-container">
+        <h1>Survey Title</h1>
+        <p>Please take a moment to fill out our survey.</p>
+        <form id="survey-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label>How satisfied are you with our service?</label>
+            <input type="radio" name="satisfaction" value="very-satisfied" id="very-satisfied">
+            <label for="very-satisfied">Very Satisfied</label>
+            <input type="radio" name="satisfaction" value="satisfied" id="satisfied">
+            <label for="satisfied">Satisfied</label>
+            <input type="radio" name="satisfaction" value="neutral" id="neutral">
+            <label for="neutral">Neutral</label>
+            <input type="radio" name="satisfaction" value="unsatisfied" id="unsatisfied">
+            <label for="unsatisfied">Unsatisfied</label>
+            <input type="radio" name="satisfaction" value="very-unsatisfied" id="very-unsatisfied">
+            <label for="very-unsatisfied">Very Unsatisfied</label>
+
+            <label for="comments">Comments:</label>
+            <textarea id="comments" name="comments" rows="4"></textarea>
+
+            <div class="button-container">
+                <button type="reset" id="reset-button">Reset</button>
+                <button type="submit" id="submit-button">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
